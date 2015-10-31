@@ -1,19 +1,27 @@
 
+git config --global user.name "nameStr"  //设置你的名字
+gir config --global user.email "youremail@email.com"//设置你的邮箱
+git remote rm origin  //删除远程库连接
+git remote add origin git@github.com:pjmnb007/footballBabies.git //为git添加一个远程库链接
+git remote -v //查看当前git仓库链接
 
-git remote rm origin
-git remote add origin git@github.com:pjmnb007/
-git push origin -u master
-git pull origin master
+git push origin -u <branchName>master //初次链接本地库与远程库 -u属性 默认master 分支
+git pull origin <branchName> master  //获取远程库master 分支的更新
 
 
-git add <file>
-git stage  <file>
-git diff --staged <file>
-git diff <file>
-git diff HEAD <file>
+git add <file>        //为git添加一个文件或者文件夹
+git stage  <file>     //为修改的文件添加一个临时快照（就是临时副本缓存）
+                      //频繁提交时需要先执行 gir stage <file> 在执行 git commit -m -a "information" 否则会出现错误，不能提交
+git diff --staged <file>  //该文件是stage快照缓存与HEAD文件缓存的差异
+git diff <file>        	//文件当前的差异
+git diff HEAD <file>    //HEAD缓存文件与当前文件的差异 与上面什么区别目前不清楚
 
-git status
-git commit -m "information"
-git checkout <file>
+git status              //查看该项目的 状态
+git commit -m "information" //做一个版本提交
+git checkout <file>  //撤回上一次到stage快照缓存时
+
+git branch branchname 创建一个分支
+git branch branchname 切换一个分支
+git branch -d branchname 删除分支 
 
 
