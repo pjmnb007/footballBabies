@@ -1,4 +1,6 @@
 
+提交时为什么提交了.ssh文件夹?
+
 git config --global user.name "nameStr"  //设置你的名字
 gir config --global user.email "youremail@email.com"//设置你的邮箱
 git remote rm origin  //删除远程库连接
