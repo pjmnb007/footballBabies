@@ -1,0 +1,3 @@
+window.laod=function(){
+`
+}
