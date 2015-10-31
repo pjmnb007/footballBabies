@@ -1,6 +1,9 @@
 
 提交时为什么提交了.ssh文件夹?
 因为使用了 commit -a 命令将所有的东西都提交了。
+
+git ssh-keygen -t rsa -C "youremail" //设置你的github公钥
+
 git config --global user.name "nameStr"  //设置你的名字
 gir config --global user.email "youremail@email.com"//设置你的邮箱
 git remote rm origin  //删除远程库连接
@@ -26,4 +29,20 @@ git branch branchname 创建一个分支
 git branch branchname 切换一个分支
 git branch -d branchname 删除分支 
 
+设置git difftool 为p4merge
+win:
+[merge]
+	tool=p4m
+[mergetool "p4m"]
+	cmd=path/to/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	trustEixtCode=false
+[diff]
+	tool=p4m
+[difftool "p4m"]
+	cmd=path/to/p4merge.exxe "$LOCAL" "$REMOTE"
+
+linux:
+
+[diff]
+	tool=p4merge.exe
 
