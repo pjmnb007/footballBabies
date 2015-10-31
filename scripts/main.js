@@ -15,3 +15,9 @@ function whichPic(){
 		alert(pic.getAtrribut('id'));
 	}
 }
+function showPic(){
+
+	if(img.style.display=='none'){
+	    img.style.display='block';
+	}
+}
