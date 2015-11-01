@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACH,SAAS,EAAC,IAAI",
+"sources": ["../scssres/base.scss"],
+"names": [],
+"file": "base.css"
+}
