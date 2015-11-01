@@ -1,0 +1,138 @@
+header{
+	.head_top{
+		.head_top_left{
+			.logo{
+				img{
+
+				}
+			}
+			span{
+
+			}
+		}
+	}
+	.head_bot{
+		nav{
+			span{
+				text-align:center;
+				line-height:50px;
+				a{
+
+				}
+			}
+		}
+	}
+}
+footer{
+	.foot_top{
+		span{
+			font-size:25px;
+			font-weight:blod;
+			line-height:105px;
+		}
+	}
+	.foot_vmedi{
+		.foot_left{
+			.foot_img{
+				background:url(../images/photos-6.jpg) no-repeat;
+				background-size:220px auto;
+				background-position:-60px 0px;
+			}
+		}
+		.foot_medi{
+			ul{
+				li{
+					&:first-child{
+						font-size:18px;
+						font-weight:blod;
+						margin:0rem 0rem 0.5rem 0rem;
+					}
+					&:not(:first-child){
+						margin-left:1rem;
+						line-height:1.4rem;
+					}
+				}
+			}
+		}
+		.foot_rig{
+			
+			}
+		}
+	.foot_bot{
+		span{
+				font-size:10px;
+				font-weight:nomal;
+		}
+	}
+}
+
+.index_content{
+	.wecome_pic_holder{
+		.pic_holder{
+			position:relative;
+			.pic_left_bar,.pic_rig_bar{
+				position:absolute;
+				@include set-size(50px,50px);
+				top:50%;
+				margin-top:-25px;
+				cursor:pointer;
+			}
+			.pic_left_bar{
+				left:0px;
+			}
+			.pic_rig_bar{
+				right:0px;
+			}
+			ul{
+				li{
+
+				}
+			}
+		}
+		.pic_text{
+
+ 			span{
+ 				line-height:50px;
+ 				font-size:18px;
+ 				font-weight:nomal;
+ 				padding-left:20px;
+ 			}
+		}
+	}
+	.intro_text_holder{
+		margin-top:30px;
+		.sub_header{
+			line-height:100px;
+			span{
+				font-size:25px;
+				fint-weight:blod;
+				padding-left:50px;
+			}
+		}
+		.sub_content{
+			padding:20px;
+			.sub_left,.sub_rig{
+
+			}
+			span{
+				text-indent:20px;
+			}
+			.sub_left{
+				span{
+					padding:20px;
+					text-align:right;
+					word-break:break-all;
+				}
+			}
+			.sub_rig{
+				ul{
+					li{
+
+					}
+				}
+			}
+		}	
+
+	}	
+
+}

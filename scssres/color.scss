@@ -1,10 +1,144 @@
+$body_bg_color:#EAEAEA;
+$font_color_nomal:#414142;
+$head_bg_color:#FFF;
+$head_color:#434343;
+$nav_bg_color:#A3A0A0;
+$nav_color:#FFFFFF;
+$foot_bg_color:#272A32;
+$foot_title_color:#DFDFDF;
+$foot_color:#CFCFCF;
+$foot_copyright_color:#BCBCBC;
 body{
-	background-color:grey;
+	background-color:$body_bg_color;
 }
 header{
-	color:red;
+	background-color:$head_bg_color;
+	.head_top{
+		.head_top_left{
+			.logo{
+			}
+			span{
+				color:$head_color;
+			}
+		}
+	}
+	.head_bot{
+		background-color:$nav_bg_color;
+		nav{
+			background-color:$nav_bg_color;
+			a{
+			  color:$nav_color;
+			}
+		}
+	}
 }
 
 footer{
+	background-color:$foot_bg_color;
+	.foot_top{
+		span{
+			color:$foot_title_color;
+		}
+	}
+	.foot_vmedi{
+
+		.foot_left{
+
+			.foot_img{
+
+			}
+
+		}
+		.foot_medi{
+
+			ul{
+				li{
+					a{
+						color:$foot_color;
+					}
+					&:first-child{
+						a{
+							color:$foot_title_color;
+						}
+					}
+				}
+			}
+			a{
+				color:$font_color_nomal;
+			}
+			.sub_left{
+
+			}
+			.sub_medi{
+
+			}
+			.sub_rig{
+
+			}
+
+		}
+		.foot_rig{
+
+
+		}
+	}
+	.foot_bot{
+		span{
+			color:$foot_copyright_color;
+		}
+	}
+}
+
+.index_content{
+	.wecome_pic_holder{
+		.pic_holder{
+			.pic_left_bar{
+				background-color:#959595;
+			}
+			.pic_rig_bar{
+				background-color:#959595;
+			}
+			ul{
+				li{
+
+				}
+			}
+		}
+		.pic_text{
+			background-color:#959595;
+			span{
+				color:#E2E2E2;
+			}
+		}
+	}
+	.intro_text_holder{
+		background-color:red;
+		.sub_header{
+			background-color:#D1D1D1;
+			span{
+			}
+		}
+		.sub_left,.sub_rig{
+
+		}
+		.sub_content{
+			background-color:#FFF;
+			span{
+				color:$font_color_nomal;
+			}
+			.sub_left{
+			}
+			.sub_rig{
+				ul{
+					li{
+						span{
+
+						}
+					}
+				}
+			}
+		}	
+
+	}		
 
 }

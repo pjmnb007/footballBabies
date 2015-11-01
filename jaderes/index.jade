@@ -1,16 +1,45 @@
+-var wecome_pic={"images/index-scroll-1.jpg":"This is a beatiful girl with with big braes","images/index-scroll-2.jpg":"This is a beatiful girl with with big braes","images/index-scroll-3.jpg":"This is a beatiful girl with with big braes","images/index-scroll-4.jpg":"This is a beatiful girl with with big braes"}
+
+-var article_smaple={"Youth_part_one":"Youth is not a time of life; it is a state of mind; it is not a matter of rosy cheeks, red lips and supple knees; it is a matter of the will, a quality of the imagination, a vigor of the emotions; it is the freshness of the deep springs of life.","Youth_part_two":"Youth means a temperamental predominance of courage over timidity, of the appetite for adventure over the love of ease. This often exists in a man of 60 more than a boy of 20. Nobody grows old merely by a number of years. We grow old by deserting our ideals.","Youth_part_three":"Whether 60 or 16, there is in every human being’s heart the lure of wonders, the unfailing appetite for what’s next and the joy of the game of living. In the center of your heart and my heart, there is a wireless station; so long as it receives messages of beauty, hope, courage and power from man and from the infinite, so long as you are young."}
+
+-var txt_main="All of us have read thrilling stories in which the hero had only a limited and specified time to live. Sometimes it was as long as a year, sometimes as short as 24 hours. But always we were interested in discovering just how the doomed hero chose to spend his last days or his last hours. I speak, of course, of free men who have a choice, not condemned criminals whose sphere of activities is strictly delimited.Such stories set us thinking, wondering what we should do under similar circumstances. What events, what experiences, what associations should we crowd into those last hours as mortal beings, what regrets"
+
 doctype html
 html
   head
     include meta
     title BabiesHome
-    link(rel="stylesheet/text" type="text/css" href="styles/complete.css")
+    link(rel="stylesheet" type="text/css" href="styles/complete.css")
 
   body
   include header
   //index body start
   // =================
-
+  div.index_content
+    div.wecome_pic_holder
+      div.pic_holder
+        div.pic_left_bar
+        div.pic_rig_bar
+        ul
+          //picture information
+          each pic_text, pic_src in wecome_pic
+            li(title="#{pic_text}")
+              a(href="",title="")
+                img(alt="",src="#{pic_src}")
+      div.pic_text
+        span These are beatiful girls with with very big braes
+    div.intro_text_holder
+      div.sub_header
+        span INTRRODUCE OF FOOTBALL BABIES
+      div.sub_content
+        div.sub_left
+          span #{txt_main}
+        div.sub_rig
+          ul
+            each txt_detail,txt_title in article_smaple
+              li(title="#{txt_title}")
+                span #{txt_detail}
   // =================
   //index body end
   include footer
-  script(type="javascript/txt",src="scripts/main.js")
+  script(type="javascript/text",src="scripts/main.js")

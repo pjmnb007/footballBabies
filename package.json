@@ -1,0 +1,25 @@
+{
+  "name": "toboo",
+  "version": "1.0.0",
+  "description": "a website show sex football girls for everyone! and use the jade,scss,js ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjmnb007/footballBabies.git"
+  },
+  "keywords": [
+    "footballBabies"
+  ],
+  "author": "toboo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjmnb007/footballBabies/issues"
+  },
+  "homepage": "https://github.com/pjmnb007/footballBabies#readme"
+}
