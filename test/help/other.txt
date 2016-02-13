@@ -1,0 +1,3 @@
+http://15.idea.lanyus.com/  webstrom 
+yum install ruby-devel
+gem install compass 
