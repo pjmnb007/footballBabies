@@ -1,3 +1,5 @@
 http://15.idea.lanyus.com/  webstrom 
 yum install ruby-devel
 gem install compass 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+mac上命令行 安装软件的环境brew 详情访问:http://brew.sh/ 
